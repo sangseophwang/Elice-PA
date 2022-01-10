@@ -1,20 +1,11 @@
-import {
-  Box,
-  List,
-  Drawer,
-  Button,
-  Divider,
-  ListItemText,
-  ListItemButton,
-  Typography,
-} from '@mui/material';
 import styled from 'styled-components';
 import Profile from 'Assets/profile.png';
 import CloseIcon from '@mui/icons-material/Close';
+import { Box, Drawer, Button, Typography } from '@mui/material';
 
 interface ModalProps {
-  handler: () => void;
   data: boolean;
+  handler: () => void;
 }
 
 const MENU = ['홈', '과목 검색', '로그인', '회원가입'];
@@ -39,9 +30,9 @@ export default function Modal({ data, handler }: ModalProps) {
               <Typography
                 sx={{
                   fontSize: 12,
+                  marginTop: -1,
                   color: 'white',
                   fontWeight: 100,
-                  marginTop: -1,
                 }}
               >
                 로그인하고 학습을 시작하세요!
@@ -72,36 +63,36 @@ const ProfileImage = styled('img')`
 
 const LoginBox = styled(Box)`
   height: 168px;
-  background-color: #524fa1;
   display: flex;
+  align-items: center;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
+  background-color: #524fa1;
 `;
 
 const ProfileBox = styled(Box)`
   width: 100%;
   display: flex;
-  justify-content: space-between;
   align-items: center;
+  justify-content: space-between;
 `;
 
 const LoginButton = styled(Button)`
-  color: white;
-  font-size: 20px;
   width: 100%;
   display: flex;
-  justify-content: flex-start;
+  color: white;
+  font-size: 20px;
   margin-left: -9px;
+  justify-content: flex-start;
 `;
 
 const MenuText = styled(Typography)`
   height: 40px;
   display: flex;
-  align-items: center;
-  padding: 10px 0 0 16px;
   font-size: 12px;
   color: #7d7e80;
+  align-items: center;
+  padding: 10px 0 0 16px;
 `;
 
 const ActiveMenuButton = styled(Button)`

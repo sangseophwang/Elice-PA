@@ -8,7 +8,7 @@ export default function DesktopBar() {
   return (
     <Box className="DesktopBar">
       <AppBar
-        position="static"
+        position="sticky"
         sx={{ backgroundColor: 'white', boxShadow: 'none' }}
       >
         <Toolbar>
@@ -27,8 +27,8 @@ export default function DesktopBar() {
           <Button>
             <SearchIcon />
           </Button>
-          <Button>로그인</Button>
-          <Button>회원가입</Button>
+          <Button sx={{ fontWeight: 700, color: '#5e5f61' }}>로그인</Button>
+          <Button sx={{ fontWeight: 700, color: '#5e5f61' }}>회원가입</Button>
         </Toolbar>
       </AppBar>
     </Box>
@@ -36,22 +36,22 @@ export default function DesktopBar() {
 }
 
 const Logo = styled.img`
+  cursor: pointer;
   max-height: 40px;
   margin-right: 8px;
-  cursor: pointer;
 `;
 
 const ActiveMenuButton = styled(Button)`
-  padding-top: 5px;
+  color: #524fa1;
   min-height: 64px;
+  padding-top: 5px;
+  font-weight: bold;
   border-radius: 0;
   box-shadow: inset 0px -4px 0px #524fa1;
-  color: #524fa1;
-  font-weight: bold;
 `;
 
 const MenuButton = styled(Button)`
-  padding-top: 5px;
   min-height: 64px;
+  padding-top: 5px;
   border-radius: 0;
 `;
