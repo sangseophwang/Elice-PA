@@ -2,7 +2,8 @@ import { useState } from 'react';
 import styled from 'styled-components';
 import Menu from '@mui/icons-material/Menu';
 import Modal from 'Components/NavigationBar/Modal';
-import { AppBar, Box, Toolbar } from '@mui/material';
+import SearchIcon from '@mui/icons-material/Search';
+import { AppBar, Box, Toolbar, Button } from '@mui/material';
 
 export default function MobileBar() {
   const [open, setOpen] = useState<boolean>(false);
@@ -21,7 +22,12 @@ export default function MobileBar() {
             alt="로고"
           />
           <Box sx={{ flexGrow: 1 }} />
-          <MenuButton onClick={handleClick} color="primary" />
+          <Button sx={{ minWidth: 32 }}>
+            <SearchIcon />
+          </Button>
+          <Button sx={{ minWidth: 32 }}>
+            <MenuButton onClick={handleClick} color="primary" />
+          </Button>
         </Toolbar>
         <Modal data={open} handler={handleClick} />
       </AppBar>
