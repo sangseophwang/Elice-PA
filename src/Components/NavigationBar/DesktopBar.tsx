@@ -2,7 +2,7 @@ import styled from 'styled-components';
 import SearchIcon from '@mui/icons-material/Search';
 import { AppBar, Box, Button, Toolbar } from '@mui/material';
 
-const MENU = ['홈', '과목 검색'];
+const MENU = ['홈', '과목검색'];
 
 export default function DesktopBar() {
   return (
@@ -13,11 +13,11 @@ export default function DesktopBar() {
       >
         <Toolbar>
           <Logo
-            src="https://cdn-api.elice.io/api/file/5c3a7a5032f24a41afd80ea89e823f13/elice-academy-colored.png?se=2100-12-31T00%3A00%3A00Z&sp=rt&sv=2020-06-12&sr=b&sig=63D1j7iUcTOu1rwNYgtIn4t%2BuJbuF644n5MKFYSJJ18%3D"
+            src="https://cdn-api.elice.io/api/file/acf2993b26374679965b3de2a3fb67a9/academy_148%402x.png?se=2100-12-31T00%3A00%3A00Z&sp=rt&sv=2020-06-12&sr=b&sig=UEaj3MWug%2BL7QWENpSqvzNwgztGLpvBhc4ETa4FWlzc%3D"
             alt="로고"
           />
           {MENU.map((menu, index) =>
-            menu === '과목 검색' ? (
+            menu === '과목검색' ? (
               <ActiveMenuButton key={index}>{menu}</ActiveMenuButton>
             ) : (
               <MenuButton key={index}>{menu}</MenuButton>
