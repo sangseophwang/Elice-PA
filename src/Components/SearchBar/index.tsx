@@ -4,7 +4,7 @@ import SearchIcon from '@mui/icons-material/Search';
 
 export default function SearchBar() {
   return (
-    <Box sx={{ marginBottom: 12 }}>
+    <Box sx={{ marginBottom: 1 }}>
       <Search
         fullWidth
         sx={{

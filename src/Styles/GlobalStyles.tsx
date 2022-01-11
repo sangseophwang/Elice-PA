@@ -7,6 +7,7 @@ const GlobalStyles = createGlobalStyle`
   body {
     font-family: 'Noto Sans KR';
     background-color: #F0F1F3;
+    letter-spacing: 0.5px;
   }
   .MobileBar, .Modal {
     display: none;

@@ -5,6 +5,7 @@ const Theme = createTheme({
     fontFamily: 'Noto Sans KR',
     button: {
       fontWeight: 400,
+      letterSpacing: 0.5,
     },
   },
   palette: {
