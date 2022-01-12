@@ -1,8 +1,8 @@
 import styled from 'styled-components';
 import { Box, Typography } from '@mui/material';
+import TodayIcon from '@mui/icons-material/Today';
 import BarChart from '@mui/icons-material/BarChart';
 import Computer from '@mui/icons-material/Computer';
-import TodayIcon from '@mui/icons-material/Today';
 
 interface ContentProps {
   url: string;
@@ -25,7 +25,7 @@ export default function Content({ url }: ContentProps) {
           <Text>기간 : 무제한</Text>
         </TextWrapper>
       </TextContainer>
-      <Logo src={url} alt="" />
+      <Logo src={url} alt="과목 로고" />
     </ContentContainer>
   );
 }

@@ -17,11 +17,14 @@ export default function CardList({ course, data }: CardListProps) {
         전체 {course}개
       </Typography>
       <Divider sx={{ marginBottom: '14px' }} />
-      <Grid container spacing={1.66}>
+      <Grid container spacing={2}>
         {data && data.length > 0 ? (
           data.map((element, index) => (
             <Grid item key={index}>
-              <CourseCard variant="outlined" sx={{ cursor: 'pointer' }}>
+              <CourseCard
+                variant="outlined"
+                sx={{ cursor: 'pointer', border: 'none' }}
+              >
                 <Header
                   title={element.title}
                   free={element.is_free}

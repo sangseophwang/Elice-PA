@@ -9,6 +9,14 @@ const GlobalStyles = createGlobalStyle`
     background-color: #F0F1F3;
     letter-spacing: 0.5px;
   }
+  .Here {
+    color: white !important;
+    background-color: #524fa1;
+  }
+  .Disable {
+    color: #cccccc;
+    pointer-events: none;
+  }
   .MobileBar, .Modal {
     display: none;
   }
