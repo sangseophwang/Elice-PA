@@ -1,8 +1,9 @@
-import { Typography, Divider, Grid, Card } from '@mui/material';
+import styled from 'styled-components';
+import EmptyIcon from 'Assets/empty.png';
+import { DataInterface } from 'Pages/interface';
 import Header from 'Components/CardList/Header';
 import Content from 'Components/CardList/Content';
-import { DataInterface } from 'Pages/interface';
-import styled from 'styled-components';
+import { Typography, Divider, Grid, Card, Box } from '@mui/material';
 
 interface CardListProps {
   course: number;
@@ -32,9 +33,13 @@ export default function CardList({ course, data }: CardListProps) {
             </Grid>
           ))
         ) : (
-          <div>
-            <h1>검색 결과가 없습니다.</h1>
-          </div>
+          <EmptyBox>
+            <EmptyImage
+              src={EmptyIcon}
+              alt="검색 결과가 없을 때 나오는 아이콘"
+            />
+            <EmptyMessage>검색 결과가 없습니다.</EmptyMessage>
+          </EmptyBox>
         )}
       </Grid>
     </>
@@ -42,7 +47,26 @@ export default function CardList({ course, data }: CardListProps) {
 }
 
 const CourseCard = styled(Card)`
-  padding: 28px 24px;
   width: 248px;
   height: 338px;
+  padding: 28px 24px;
+`;
+
+const EmptyBox = styled(Box)`
+  width: 100%;
+  height: 232px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: flex-end;
+`;
+
+const EmptyImage = styled('img')`
+  width: 64px;
+  margin-bottom: 30px;
+`;
+
+const EmptyMessage = styled(Typography)`
+  color: #999999;
+  font-weight: 300;
 `;
