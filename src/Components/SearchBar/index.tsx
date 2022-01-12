@@ -1,6 +1,6 @@
-import { Box, TextField, InputAdornment } from '@mui/material';
 import styled from 'styled-components';
 import SearchIcon from '@mui/icons-material/Search';
+import { Box, TextField, InputAdornment } from '@mui/material';
 
 export default function SearchBar() {
   return (
@@ -39,7 +39,7 @@ export default function SearchBar() {
 }
 
 const Search = styled(TextField)`
-  background-color: white;
   border-radius: 4px;
+  background-color: white;
   border-color: rgb(201, 202, 204);
 `;

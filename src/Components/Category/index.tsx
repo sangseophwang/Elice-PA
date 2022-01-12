@@ -43,10 +43,10 @@ const Row = styled(TableRow)`
 const Title = styled(TableCell)`
   background-color: #f9fafc;
   width: 64px;
-  font-size: 12px;
-  padding: 14px 16px;
-  font-weight: 700;
   color: #5e5f61;
+  font-size: 12px;
+  font-weight: 700;
+  padding: 14px 16px;
   letter-spacing: 0.5px;
   border-right: 1px solid #e0e0e0;
 `;
