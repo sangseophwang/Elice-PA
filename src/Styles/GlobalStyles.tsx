@@ -11,7 +11,7 @@ const GlobalStyles = createGlobalStyle`
   }
   .Here {
     color: white !important;
-    background-color: #524fa1;
+    background-color: #524fa1 !important;
   }
   .Disable {
     color: #cccccc;

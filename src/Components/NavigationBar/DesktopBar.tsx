@@ -27,8 +27,8 @@ export default function DesktopBar() {
           <Button>
             <SearchIcon />
           </Button>
-          <Button sx={{ fontWeight: 700, color: '#5e5f61' }}>로그인</Button>
-          <Button sx={{ fontWeight: 700, color: '#5e5f61' }}>회원가입</Button>
+          <AuthButton>로그인</AuthButton>
+          <AuthButton>회원가입</AuthButton>
         </Toolbar>
       </AppBar>
     </Box>
@@ -54,4 +54,9 @@ const MenuButton = styled(Button)`
   min-height: 64px;
   padding-top: 5px;
   border-radius: 0;
+`;
+
+const AuthButton = styled(Button)`
+  font-weight: 700;
+  color: #5e5f61;
 `;

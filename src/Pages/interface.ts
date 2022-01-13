@@ -1,8 +1,8 @@
 export interface DataInterface {
-  enroll_type: number;
-  is_free: boolean;
-  label: string;
   title: string;
-  short_description: string;
+  label: string;
+  is_free: boolean;
+  enroll_type: number;
   logo_file_url: string;
+  short_description: string;
 }

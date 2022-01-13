@@ -20,7 +20,7 @@ export default function CardList({ course, data }: CardListProps) {
       <Grid container spacing={2}>
         {data && data.length > 0 ? (
           data.map((element, index) => (
-            <Grid item key={index}>
+            <Grid item xs={12} md={4} lg={3} key={index}>
               <CourseCard
                 variant="outlined"
                 sx={{ cursor: 'pointer', border: 'none' }}
@@ -50,8 +50,8 @@ export default function CardList({ course, data }: CardListProps) {
 }
 
 const CourseCard = styled(Card)`
-  width: 248px;
   height: 338px;
+  min-width: 248px;
   padding: 28px 24px;
 `;
 
