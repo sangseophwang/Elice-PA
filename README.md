@@ -5,6 +5,8 @@
 
 [🛠 개발 과정](https://onyx-limburger-373.notion.site/Elice-Programming-Assignment-a764b4cc010547c091cb1d58a1cc3b99)
 
+[📽 시연 영상](https://youtu.be/WSp5eaSqNIY)
+
 ## 기술 스택
 
 - TypeScript
