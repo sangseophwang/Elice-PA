@@ -2,7 +2,11 @@ import styled from 'styled-components';
 import SearchIcon from '@mui/icons-material/Search';
 import { Box, TextField, InputAdornment } from '@mui/material';
 
-export default function SearchBar() {
+interface SearchBarProps {
+  onSearch: Function;
+}
+
+export default function SearchBar({ onSearch }: SearchBarProps) {
   return (
     <Box sx={{ marginBottom: 1 }}>
       <Search
@@ -25,6 +29,7 @@ export default function SearchBar() {
             },
           },
         }}
+        onChange={(event) => onSearch(event.target.value)}
         placeholder="배우고 싶은 언어, 기술을 검색해 보세요"
         InputProps={{
           startAdornment: (
