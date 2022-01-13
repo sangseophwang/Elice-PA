@@ -14,9 +14,15 @@ export default function Header({
   title,
   description,
 }: HeaderProps) {
+  const handleLabel = () => {
+    if (type === 0 && free === true) return '무료';
+    else if (type === 0 && free === false) return '유료';
+    else if (type === 4 && free === true) return '구독';
+    else return '준비중';
+  };
   return (
     <>
-      <CourseLabel>유료</CourseLabel>
+      <CourseLabel>{handleLabel()}</CourseLabel>
       <CourseTitleBox>
         <CourseTitle>{title}</CourseTitle>
       </CourseTitleBox>
